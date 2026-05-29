@@ -2,14 +2,13 @@ export const portfolioData = {
   name: 'Ramalakshmi Madyahnapu',
   tagline: 'From Circuits to Code — Building Intelligent Solutions',
   location: 'Eluru, Andhra Pradesh, India',
-  email: 'ramalakshmi@example.com',
-  phone: '+91-XXXXXXXXXX',
+  email: 'madhyanapuramalakshmi5@gmail.com',
+  phone: '+91 91779 05899',
   
   // Social Links
   socialLinks: {
-    github: 'https://github.com',
-    linkedin: 'https://linkedin.com',
-    twitter: 'https://twitter.com',
+    github: 'https://github.com/madhyanapuramalakshmi5',
+    linkedin: 'https://www.linkedin.com/in/ramalakshmi-madhyanapu',
     instagram: 'https://instagram.com',
   },
 
@@ -215,7 +214,7 @@ export const portfolioData = {
 
   // GitHub Stats (Placeholders)
   githubStats: {
-    username: 'ramalakshmi',
+    username: 'madhyanapuramalakshmi5',
     totalRepos: 25,
     totalStars: 150,
     followers: 50,

@@ -128,7 +128,6 @@ const Contact = () => {
                 {[
                   { icon: '🐙', label: 'GitHub', url: portfolioData.socialLinks.github },
                   { icon: '💼', label: 'LinkedIn', url: portfolioData.socialLinks.linkedin },
-                  { icon: '🐦', label: 'Twitter', url: portfolioData.socialLinks.twitter },
                 ].map((social) => (
                   <motion.a
                     key={social.label}

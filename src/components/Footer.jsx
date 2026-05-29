@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FiArrowUp, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
+import { FiArrowUp, FiGithub, FiLinkedin } from 'react-icons/fi'
 import { Link } from 'react-scroll'
 import { portfolioData } from '../utils/constants'
 
@@ -118,15 +118,6 @@ const Footer = () => {
               >
                 <FiLinkedin size={20} />
               </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.2, y: -3 }}
-                href={portfolioData.socialLinks.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-primary-100 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 hover:bg-primary-600 dark:hover:bg-primary-500 hover:text-white transition-all"
-              >
-                <FiTwitter size={20} />
-              </motion.a>
             </div>
           </motion.div>
         </div>
@@ -157,17 +148,7 @@ const Footer = () => {
           </motion.button>
         </div>
 
-        {/* Footer Note */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center text-xs text-slate-500 dark:text-slate-600 pt-4"
-        >
-          <p>
-            Designed & Built with <span className="text-red-500">❤️</span> using React, Tailwind CSS & Framer Motion
-          </p>
-        </motion.div>
+
       </div>
     </footer>
   )

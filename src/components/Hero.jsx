@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FiDownload, FiArrowRight } from 'react-icons/fi'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 import TypingAnimation from './TypingAnimation'
 import { downloadResume } from '../utils/email'
@@ -18,12 +18,12 @@ const Hero = () => {
       <motion.div
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 4, repeat: Infinity }}
-        className="absolute top-20 right-10 w-20 h-20 rounded-full bg-primary-500/10 dark:bg-primary-400/5 blur-xl"
+        className="absolute top-20 right-10 w-20 h-20 rounded-full bg-primary-500/10 dark:bg-primary-400/5 blur-xl pointer-events-none"
       />
       <motion.div
         animate={{ y: [0, 20, 0] }}
         transition={{ duration: 5, repeat: Infinity, delay: 0.5 }}
-        className="absolute bottom-20 left-10 w-32 h-32 rounded-full bg-primary-500/10 dark:bg-primary-400/5 blur-2xl"
+        className="absolute bottom-20 left-10 w-32 h-32 rounded-full bg-primary-500/10 dark:bg-primary-400/5 blur-2xl pointer-events-none"
       />
 
       <motion.div
@@ -92,6 +92,8 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.2, y: -5 }}
                 href={portfolioData.socialLinks.github}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 rounded-lg bg-primary-100 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 hover:text-white hover:bg-primary-600 transition-all"
               >
                 <FaGithub size={24} />
@@ -99,16 +101,11 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.2, y: -5 }}
                 href={portfolioData.socialLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 rounded-lg bg-primary-100 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 hover:text-white hover:bg-primary-600 transition-all"
               >
                 <FaLinkedin size={24} />
-              </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.2, y: -5 }}
-                href={portfolioData.socialLinks.twitter}
-                className="p-3 rounded-lg bg-primary-100 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 hover:text-white hover:bg-primary-600 transition-all"
-              >
-                <FaTwitter size={24} />
               </motion.a>
             </motion.div>
           </motion.div>
@@ -132,7 +129,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 to-transparent opacity-30" />
 
                 <div className="relative z-10 space-y-6">
-                  {/* Avatar Placeholder */}
+                   {/* Avatar Placeholder */}
                   <div className="flex justify-center">
                     <motion.div
                       animate={{
@@ -143,9 +140,9 @@ const Hero = () => {
                         ],
                       }}
                       transition={{ duration: 3, repeat: Infinity }}
-                      className="w-40 h-40 rounded-2xl bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center text-6xl font-bold text-white"
+                      className="w-40 h-40 rounded-2xl bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center text-6xl font-bold text-white overflow-hidden"
                     >
-                      RM
+                      <img src="/profile.jpg" alt={portfolioData.name} className="w-full h-full object-cover" />
                     </motion.div>
                   </div>
 

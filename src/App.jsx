@@ -7,7 +7,6 @@ import Projects from './components/Projects'
 import Internship from './components/Internship'
 import Certifications from './components/Certifications'
 import Achievements from './components/Achievements'
-import GitHubStats from './components/GitHubStats'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { ParticlesBackground } from './components/ParticlesBackground'
@@ -40,7 +39,6 @@ function App() {
             <Internship />
             <Certifications />
             <Achievements />
-            <GitHubStats />
             <Contact />
           </main>
 

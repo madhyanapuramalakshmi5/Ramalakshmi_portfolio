@@ -12,7 +12,7 @@ export const initEmailJS = () => {
 export const sendEmail = async (formData) => {
   try {
     const result = await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
-      to_email: 'ramalakshmi@example.com',
+      to_email: 'madhyanapuramalakshmi5@gmail.com',
       from_name: formData.name,
       from_email: formData.email,
       message: formData.message,
