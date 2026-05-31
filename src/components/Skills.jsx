@@ -11,27 +11,15 @@ const SkillCard = ({ category, skills }) => {
       className="card-container"
     >
       <h3 className="text-xl font-bold mb-6 gradient-text">{category}</h3>
-      <div className="space-y-4">
+      <div className="flex flex-wrap gap-2.5">
         {skills.map((skill) => (
-          <div key={skill.name}>
-            <div className="flex justify-between mb-2">
-              <p className="font-medium text-slate-900 dark:text-white">
-                {skill.name}
-              </p>
-              <span className="text-sm text-primary-600 dark:text-primary-400">
-                {skill.level}%
-              </span>
-            </div>
-            <div className="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
-              <motion.div
-                initial={{ width: 0 }}
-                whileInView={{ width: `${skill.level}%` }}
-                transition={{ duration: 1, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="h-full bg-gradient-green rounded-full"
-              />
-            </div>
-          </div>
+          <motion.span
+            key={skill.name}
+            whileHover={{ scale: 1.05, y: -2 }}
+            className="px-3 py-1.5 rounded-lg text-sm font-semibold bg-primary-500/10 dark:bg-primary-400/10 text-primary-700 dark:text-primary-300 border border-primary-300/30 dark:border-primary-600/30 hover:bg-primary-500/20 dark:hover:bg-primary-400/20 transition-all cursor-default"
+          >
+            {skill.name}
+          </motion.span>
         ))}
       </div>
     </motion.div>
