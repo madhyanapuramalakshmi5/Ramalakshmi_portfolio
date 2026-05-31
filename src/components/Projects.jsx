@@ -131,21 +131,18 @@ const Projects = () => {
           layout 
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          <AnimatePresence mode="popLayout">
-            {filteredProjects.map((project) => (
-              <motion.div
-                key={project.id}
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.25 }}
-                className="h-full"
-              >
-                <ProjectCard project={project} />
-              </motion.div>
-            ))}
-          </AnimatePresence>
+          {filteredProjects.map((project) => (
+            <motion.div
+              key={project.id}
+              layout
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.25 }}
+              className="h-full"
+            >
+              <ProjectCard project={project} />
+            </motion.div>
+          ))}
         </motion.div>
 
         {/* Empty State */}
