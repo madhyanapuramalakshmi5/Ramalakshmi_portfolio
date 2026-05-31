@@ -70,7 +70,7 @@ export const portfolioData = {
       description: 'Built a machine learning model to predict student academic performance based on attendance, study hours, and previous marks.',
       fullDescription: 'An advanced ML project that analyzes multiple student parameters to provide accurate academic performance predictions. Uses multiple algorithms for comparison and ensemble methods for improved accuracy.',
       technologies: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib'],
-      category: 'AI & Machine Learning',
+      category: 'AI & ML',
       features: [
         'Data preprocessing and cleaning',
         'Exploratory Data Analysis (EDA)',
@@ -90,7 +90,7 @@ export const portfolioData = {
       description: 'Designed and developed an automatic door opening system using sensors and embedded hardware components.',
       fullDescription: 'An IoT-based system combining electronics knowledge with embedded systems to create an intelligent door automation solution.',
       technologies: ['Embedded C', 'Arduino', 'Sensors', 'VLSI'],
-      category: 'IoT & Embedded Systems',
+      category: 'IoT & Embedded',
       features: [
         'Sensor-based automation',
         'Embedded system integration',
@@ -109,7 +109,7 @@ export const portfolioData = {
       description: 'Developed a security alarm system using laser light and sensor-based detection mechanisms.',
       fullDescription: 'Advanced security system utilizing optical sensors and laser technology for intrusion detection and alert mechanisms.',
       technologies: ['Electronics', 'Sensors', 'Laser', 'Circuit Design'],
-      category: 'Electronics & Security',
+      category: 'Security',
       features: [
         'Intrusion detection',
         'Real-time alerts',
@@ -235,8 +235,7 @@ export const navLinks = [
 
 export const projectCategories = [
   'All',
-  'AI & Machine Learning',
-  'IoT & Embedded Systems',
-  'Electronics & Security',
-  'Frontend',
+  'AI & ML',
+  'IoT & Embedded',
+  'Security',
 ]
