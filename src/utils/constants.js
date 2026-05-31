@@ -80,7 +80,7 @@ export const portfolioData = {
         'Hyperparameter tuning',
       ],
       image: '🤖',
-      githubLink: '#',
+      githubLink: 'https://github.com/madhyanapuramalakshmi5/student_marks_prediction_using_ml',
       liveLink: '#',
       status: 'Completed',
     },
