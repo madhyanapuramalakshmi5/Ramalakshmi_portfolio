@@ -176,36 +176,30 @@ export const portfolioData = {
   achievements: [
     {
       id: 1,
-      title: 'Hackathon Winner',
-      description: 'Won the college hackathon competition by building an innovative AI solution.',
-      icon: '🏆',
-    },
-    {
-      id: 2,
       title: 'PCB Design Workshop',
       description: 'Participated in and completed advanced PCB design workshop.',
       icon: '🛠️',
     },
     {
-      id: 3,
+      id: 2,
       title: 'MATLAB in AI Workshop',
       description: 'Attended comprehensive workshop on MATLAB for AI applications.',
       icon: '📊',
     },
     {
-      id: 4,
+      id: 3,
       title: 'Active Participant',
       description: 'Regular participant in technical events and competitions.',
       icon: '⭐',
     },
     {
-      id: 5,
+      id: 4,
       title: 'Club Leadership',
       description: 'Active member of collaborative college technical clubs.',
       icon: '👥',
     },
     {
-      id: 6,
+      id: 5,
       title: 'Code Contributions',
       description: 'Regular contributor to open-source projects on GitHub.',
       icon: '💻',

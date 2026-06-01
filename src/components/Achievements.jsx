@@ -86,7 +86,7 @@ const Achievements = () => {
             { label: 'Projects', value: '3+' },
             { label: 'Skills', value: '15+' },
             { label: 'Certifications', value: '3' },
-            { label: 'Achievements', value: '6' },
+            { label: 'Achievements', value: '5' },
           ].map((stat, idx) => (
             <motion.div
               key={idx}
